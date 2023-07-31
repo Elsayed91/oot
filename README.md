@@ -1,8 +1,8 @@
 # Order of the Template (OOT)
 
-In the sacred halls of software development, the Order of the Template (OOT) stands as a bastion of structure and order amidst the chaos. The order, founded by the ancients, carries the mission of maintaining harmony between variables and templates, ensuring every template adheres to its rightful structure, and bringing light to the shadowy corners of Jinja and YAML.
+In the sacred halls of Dev, the Order of the Template (OOT) stands as a bastion of structure and order amidst the chaos. The order, founded by the ancients, carries the mission of maintaining harmony between variables and templates, ensuring every template adheres to its rightful structure, and bringing light to the shadowy corners of Jinja and YAML.
 
-The Order of the Template provides a noble toolkit for Python developers, aiding them in their quests to parse YAML files and Jinja templates, resolve environment variables, and validate JSON schemas.
+The Order of the Template provides a noble toolkit for Python developers, aiding them in their quests to parse YAML files and Jinja templates, resolve environment variables, and validate schemas.
 
 ## The Code of the Order
 ### A Noble Quest
@@ -58,10 +58,9 @@ pip install oot
 May the Order guide you in your quests. 
 
 
-
 ## Closing Words
 
-Jinja2 is parse-able. There are some packages that help with env substitution in YAML/tpl files. 
-In my work I usually make use of both. So instead of creating the functions and tests for each project, I decided to just create a package that provides me this functionality.
-
-The name was my idea, the readme is ChatGPT's. I love it. 
+- OOT was born out of the re-occuring necessity to parse Jinja templates and resolve environment variables across multiple projects.
+- To separate concerns, enhance productivity and spare myself the need to setup code and tests within each project, I encapsulated the functionality.
+- OOT's primary objective is to painlessly handle the resolution of environmental variables and/or templating in your YAML files. 
+- I came up with the name and theme, the README is a glorious work of `ChatGPT`.
