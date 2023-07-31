@@ -64,4 +64,4 @@ May the Order guide you in your quests.
 - OOT was born out of the re-occuring necessity to parse Jinja templates and resolve environment variables across multiple projects.
 - To separate concerns, enhance productivity and spare myself the need to setup code and tests within each project, I encapsulated the functionality.
 - OOT's primary objective is to painlessly handle the resolution of environmental variables and/or templating in your YAML files. 
-- I came up with the name and theme, the README is a glorious work of `ChatGPT`.
+- I came up with the name and theme. the README is a glorious work of `ChatGPT`.
