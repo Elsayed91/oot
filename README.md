@@ -23,7 +23,7 @@ from oot import parse_file
 
 file_path = "manuscript.yaml"
 variables = {"TEMPLAR_NAME": "Jacques de Molay"}
-os.environ["HALL_OF_HONOR"] = "Hall of the Brave"
+os.environ["HALL_OF_HONOR"] = "Hall of the Brave" # Environmental variables will be automatically substituted
 
 # The Templar decodes the manuscript
 manuscript = parse_file(file_path, context=variables)
