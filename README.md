@@ -12,6 +12,7 @@ The Templars are trained not only in the ancient art of parsing Jinja templates 
 Consider a quest where a Templar must decode an ancient manuscript, a YAML file filled with Jinja templates and environment variables:
 
 ```yaml
+# manuscript.yaml
 Templar: {{ TEMPLAR_NAME|default('Unknown Templar') }}
 HallOfHonor: ${HALL_OF_HONOR:"Hall of the Wicked"}
 ```
@@ -49,7 +50,7 @@ In the above example, `schema.json` might be a JSON schema file that defines the
 
 ## Joining the Order
 
-The Order welcomes all who seek order in their templates and harmony in their variables. To install the Order's toolkit, use pip:
+The Order welcomes all who seek order in their templates and harmony in their variables. To install the Order's toolkit, simple run:
 
 ```bash
 pip install oot
