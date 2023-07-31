@@ -1,0 +1,25 @@
+[tool.poetry]
+name = "oot"
+version = "0.1.0"
+description = "Order of the Template: A Python package for parsing Jinja templates and YAML files with environment variables."
+authors = ["Elsayed91 <elsayed.is@outlook.com>"]
+license = "MIT"
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.9"
+jinja2 = "^3.1.2"
+pyyaml = "^6.0.1"
+jsonschema = "^4.18.4"
+fastjsonschema = "^2.18.0"
+
+
+[tool.poetry.group.dev.dependencies]
+pytest = "^7.4.0"
+flake8 = "^6.1.0"
+black = "^23.7.0"
+isort = "^5.12.0"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"

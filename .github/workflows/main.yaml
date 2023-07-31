@@ -1,0 +1,33 @@
+name: main_cicd
+
+on:
+  push:
+    branches: [ main ]
+  pull_request:
+    branches: [ main ]
+
+jobs:
+  build:
+
+    runs-on: ubuntu-latest
+    steps:
+    - uses: actions/checkout@v3
+    - name: Install poetry
+      run: pipx install poetry
+    - uses: actions/setup-python@v4
+      with:
+        python-version: '3.9'
+        cache: 'poetry'
+    - run: 
+        poetry install --all-extras
+    - name: Lint with flake8
+      run: poetry run flake8 schemadiff/ --count --select=E9,F63,F7,F82 --show-source --statistics
+    - name: Format with black
+      run: poetry run black schemadiff/ --check
+    - name: Check imports with isort
+      run: poetry run isort schemadiff/ --check-only
+    - name: Test with pytest
+      run: poetry run pytest tests/ -sv
+    - name: Publish to PyPi
+      run: |
+        poetry publish --build -u __token__ -p ${{ secrets.PYPI_TOKEN }}
