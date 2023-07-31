@@ -1,6 +1,6 @@
 [tool.poetry]
 name = "oot"
-version = "0.1.0"
+version = "0.1.0.1"
 description = "Order of the Template: A Python package for parsing Jinja templates and YAML files with environment variables."
 authors = ["Elsayed91 <elsayed.is@outlook.com>"]
 license = "MIT"
